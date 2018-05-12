@@ -12,6 +12,6 @@ class ApplicationRecord < ActiveRecord::Base
       raise "invalid id type, please change to uuid"
     end
 
-    self.id ||= Agilibox::SortableUUIDGenerator.generate
+    self.id ||= Agilibox::SortableUUIDGenerator.call
   end
 end
