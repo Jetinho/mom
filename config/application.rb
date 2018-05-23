@@ -25,6 +25,18 @@ module Mom
     config.i18n.default_locale = :fr
 
     config.action_mailer.delivery_method = :sendmail
+    config.action_mailer.raise_delivery_errors = true
+
+    # Config SES
+    # config.action_mailer.delivery_method = :smtp
+    # config.action_mailer.smtp_settings = {
+    #   :address              => ENV["SMTP_HOST"],
+    #   :port                 => 587,
+    #   :user_name            => ENV["SMTP_USER"],
+    #   :password             => ENV["SMTP_PASSWORD"],
+    #   :enable_starttls_auto => true,
+    #   :authentication       => :login,
+    # }
 
     config.active_record.primary_key = :uuid
     config.active_record.belongs_to_required_by_default = false
