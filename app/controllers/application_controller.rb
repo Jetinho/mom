@@ -18,6 +18,10 @@ class ApplicationController < ActionController::Base
     redirect_to main_app.root_path
   end
 
+  rescue_from ActionController::UnknownFormat do
+    head :not_acceptable
+  end
+
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
 
   helper Agilibox::AllHelpers
