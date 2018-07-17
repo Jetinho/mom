@@ -4,7 +4,7 @@ gem "dotenv-rails", require: "dotenv/rails-now" # Keep it first
 
 gem "rails", "~> 5.1.6"
 gem "agilidee-devise", ">= 1.1.0"
-gem "agilibox", ">= 1.2.2"
+gem "agilibox", ">= 1.3.4"
 
 gem "carrierwave"
 gem "uglifier"
@@ -24,7 +24,6 @@ gem "pry-rails"
 gem "kaminari-i18n"
 gem "bootstrap-datepicker-rails"
 gem "execjs"
-gem "therubyracer"
 gem "autoprefixer-rails"
 gem "font-awesome-sass"
 gem "puma"
